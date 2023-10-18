@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(18, 0, 110);
+}
+
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px gainsboro;
+    border-radius: 10px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(246, 251, 255);
+    }
+}
+
+nav li a {
+    color: rgb(18, 0, 110);
+}
+
+nav li:hover {
+    background-color:  rgb(236, 41, 41);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.py-3 {
+    padding: 16px 0;
+}
+.px-3 {
+    padding: 0 16px;
+}
+.bg-red-o {
+    background-color: rgb(255, 0, 0);
+}
+.bg-azul-o {
+    background-color: rgb(0 157 222);
+}
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+.text-white {
+    color: white;
+}
+.text-red {
+    color: rgb(255, 1, 1);
+}
+.text-orange {
+    color: rgb(255, 145, 0);
+}
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+}
+.text-subr {
+    text-decoration: underline;
+}
+#listaoc ol {
+    list-style-type: upper-alpha;
+}
+#listaoc ol ol {
+    list-style-type: upper-roman;
+}
+#listaotc ol {
+    list-style-type: lower-alpha;
+}
+#listaotc ol ol {
+    list-style-type: lower-roman;
+}
+#listaotc ol ol ol {
+    list-style-type: upper-roman;
+}
+#listadtc ul ul {
+    list-style-image: url(../img/balon\ baloncesto.png);
+}
+#listadtc ul ul ul{
+    list-style-image: none;
+    list-style-type: square;
+}
+dt {
+    background-color: rgb(3, 3, 39);
+    color: white;
+    font-size: 20px;
+    display: inline;
+}
+dd {
+    padding: 10px 0;
+}
+table.tcentered {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(195, 182, 43);
+}
+table.tcentered th {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+table.tcentered td {
+    padding: 6px;
+}
+table.tstriped tr:nth-child(odd) {
+    background-color: rgb(237, 254, 0);
+}
+table.tstriped tr:nth-child(even) {
+    background-color: rgb(81, 253, 2);
+}
+table.horario {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+table.horario th {
+    background-color: #f0f0f0;
+    color: #008080;
+}
+table.horario th.grupo {
+    font-size: 26px;
+    font-style: italic;
+}
+.fol {
+    background-color: #f0f0c8;
+}
+.ende {
+    background-color: #27c8c7;
+}
+.lm {
+    background-color: #ffd232;
+}
+.prog {
+    background-color: #ba7777;
+}
+.sisi {
+    background-color: #b4b464;
+}
+.ing {
+    background-color: #ffa264;
+}
+.bd {
+    background-color: #fec8c8;
+}
+.fol {
+    background-color: #f0f0c8;
+}
+.fol {
+    background-color: #f0f0c8;
+}
+form.form-login {
+    width: 50%;
+    float: left;
+    padding: 0 40px;
+}
+form.form-registro {
+    width: 50%;
+    float: right;
+    padding: 0 40px;
+}
+form.form-login fieldset{
+    width: 60%;
+}
+form.form-html5 {
+    width: 40%;
+    margin: 0 auto;
+}
+
+form.form-html5 fieldset {
+    padding: 0 30px;
+    background-color: #828924;
+}
+form.form-html5 legend {
+    background-color: rgb(255, 2, 2);
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+}
+form.form-html5 label {
+    background-color: rgb(246, 0, 0);
+    color: white;
+}
+.cb {
+    clear: both;
+}
+.btn {
+    border: 0;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.btn-red {
+    background-color: rgb(78, 6, 6);
+    color: white;
+}
+.btn-blue {
+    background-color: rgb(22, 3, 68);
+    color: white;
+}
