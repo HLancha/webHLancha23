@@ -160,6 +160,9 @@ a {
 .bg-azul-c {
     background-color: rgb(240, 249, 252);
 }
+.bg-orange {
+    background-color: orange;
+}    
 .text-white {
     color: white;
 }
